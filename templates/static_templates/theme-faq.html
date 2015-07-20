@@ -1,0 +1,72 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("FAQ")}</%block>
+
+<section class="static-container faq">
+<h1>${_("Preguntas frecuentes")}</h1>
+
+<section class="cd-faq">
+
+<!--
+	<ul id="#myfaqlist" class="cd-faq-categories">
+		<li><a class="selected" href="#basics">Basics</a></li>
+		<li><a href="#mobile">Mobile</a></li>
+		<li><a href="#account">Account</a></li>
+		<li><a href="#payments">Payments</a></li>
+		<li><a href="#privacy">Privacy</a></li>
+		<li><a href="#delivery">Delivery</a></li>
+	</ul>
+-->
+	<div class="cd-faq-items">
+		<ul id="basics" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Preguntas b&aacutesicas</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">C&oacutemo entro a la plataforma?</a>
+				<div class="cd-faq-content">
+					<p>Con tu correo institucional y tu contraseña.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="account" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Cuenta de acceso</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">C&oacutemo cambio mi password?</a>
+				<div class="cd-faq-content">
+					<p>Cuando entras a tu cuenta en la esquina superior derecha le puedes dar click a tu nombre de perfil, en el menu deberas seleccional propiedades de la cuenta y en seguida se mostrar&aacute un menu donde puedes cambiar tu password.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Olvid&eacute mi password. C&oacutemo lo obtengo?</a>
+				<div class="cd-faq-content">
+					<p>A la hora de iniciar sesi&oacuten en la plataforma existe un link que dice olvid&eacute mi password, ah&iacute podr&aacutes reenviarte el password a tu correo institucional. </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="payments" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Pagos</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">C&oacutemo se realiza el pago?</a>
+				<div class="cd-faq-content">
+					<p>La informaci&oacuten de encuentra contactado al departamento de admisiones.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel"></a>
+</section> <!-- cd-faq -->
+
+</section>
+
+<script src="static/themes/ionisx/js/faqmodernizr.js"></script>
+<script src="static/themes/ionisx/js/faqjquery-2.1.1.js"></script>
+<script src="static/themes/ionisx/js/faqjquery.mobile.custom.min.js"></script>
+<script src="static/themes/ionisx/js/faqmain.js"></script>

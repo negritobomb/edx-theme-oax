@@ -1,0 +1,87 @@
+## mako
+<%! from django.utils.translation import ugettext as _ %>
+<%! from microsite_configuration.templatetags.microsite import platform_name %>
+<%namespace name='static' file='static_content.html'/>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="row">
+
+        <div class="col-sm-4">
+            <img src="${static.url('themes/{theme_name}/images/logo-open-edx.png'.format(theme_name=settings.THEME_NAME))}" width="273" height="48" alt="Chapingo" class="img-responsive"/>
+        </div>
+
+        <div class="col-sm-4">
+<!--          <nav class="nav"> -->
+              <h2>Nosotros</h2>
+              <ul>
+<!--                %if settings.MKTG_URL_LINK_MAP.get('ABOUT'):
+<!--                <li>
+<!--                  <a id="about" href="${marketing_link('ABOUT')}">${_("About")}</a>
+<!--                </li>
+<!--                %endif -->
+                <li>
+                  <a href="//www.chapingo.mx">Acerca de la UACh</a>
+                </li>
+
+                %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
+                <li>
+                  <a id="faq" href="${marketing_link('FAQ')}">${_("FAQ")}</a>
+                </li>
+                %endif
+
+                %if settings.MKTG_URL_LINK_MAP.get('CONTACT'):
+                <li>
+                  <a id="contact" href="${marketing_link('CONTACT')}">${_("Contacto")}</a>
+                </li>
+                %endif
+
+<!--                %if settings.MKTG_URL_LINK_MAP.get('HONOR'):
+<!--                <li>
+<!--                  <a href="${marketing_link('HONOR')}">${_("Honor")}</a>
+<!--                </li>
+<!--                %endif -->
+                %if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
+                <li>
+                  <a href="${marketing_link('PRIVACY')}">${_("Privacidad")}</a>
+                </li>
+                %endif
+                <br/>
+              </ul>
+<!--          </nav> -->
+        </div>
+
+<!--        float:left; clear: left; margin-left: 20px; -->
+
+        <div class="col-sm-4">
+          <h2>Síguenos</h2>
+          <ul>
+              <li style="list-style-type:none;" class="social-item"><a href="http://www.facebook.com/chapingo.online" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook</a>
+              </li>
+              <br/>
+              <li style="list-style-type:none;" class="social-item"><a href="https://twitter.com/uach_chapingo" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter</a>
+              </li>
+              <br/>
+              <li style="list-style-type:none;" class="social-item"><a href="http://www.youtube.com/channel/UCnuE3CSl4Rze69rLq5jVRKw" target="_blank"><i class="fa fa-youtube fa-2x"></i> Youtube</a>
+              </li>
+              <br/>
+          </ul>
+        </div>
+
+    </div>
+
+    <div class="text-center">
+      <font size="2">
+        <p class="copyright">
+          ${_(u"© 2011-2015 {platform_name}®. ©Universidad Autónoma Chapingo. Todos los derechos reservados.").format(platform_name=platform_name())}</p>
+      </font>
+      <font size="1">
+        <p>
+          km 38.5 carr. México - Texcoco. CP 56230, Chapingo, Estado de México. Tel (595)9521500</p>
+      </font>
+    </div>
+
+  </div>
+
+</footer>
