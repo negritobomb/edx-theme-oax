@@ -22,19 +22,15 @@
 <!--                </li>
 <!--                %endif -->
                 <li>
-                  <a href="//www.chapingo.mx">Acerca de la UACh</a>
+                  <a href="http://www.oaxaca.gob.mx">Gobierno del estado</a>
                 </li>
 
                 %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
-                <li>
-                  <a id="faq" href="${marketing_link('FAQ')}">${_("FAQ")}</a>
-                </li>
+
                 %endif
 
                 %if settings.MKTG_URL_LINK_MAP.get('CONTACT'):
-                <li>
-                  <a id="contact" href="${marketing_link('CONTACT')}">${_("Contacto")}</a>
-                </li>
+
                 %endif
 
 <!--                %if settings.MKTG_URL_LINK_MAP.get('HONOR'):
@@ -43,9 +39,6 @@
 <!--                </li>
 <!--                %endif -->
                 %if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
-                <li>
-                  <a href="${marketing_link('PRIVACY')}">${_("Privacidad")}</a>
-                </li>
                 %endif
                 <br/>
               </ul>
@@ -57,13 +50,13 @@
         <div class="col-sm-4">
           <h2>Síguenos</h2>
           <ul>
-              <li style="list-style-type:none;" class="social-item"><a href="http://www.facebook.com/chapingo.online" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook</a>
+              <li style="list-style-type:none;" class="social-item"><a href="https://www.facebook.com/GobOax" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook</a>
               </li>
               <br/>
-              <li style="list-style-type:none;" class="social-item"><a href="https://twitter.com/uach_chapingo" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter</a>
+              <li style="list-style-type:none;" class="social-item"><a href="https://twitter.com/goboax" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter</a>
               </li>
               <br/>
-              <li style="list-style-type:none;" class="social-item"><a href="http://www.youtube.com/channel/UCnuE3CSl4Rze69rLq5jVRKw" target="_blank"><i class="fa fa-youtube fa-2x"></i> Youtube</a>
+              <li style="list-style-type:none;" class="social-item"><a href="http://www.youtube.com/user/GobOax" target="_blank"><i class="fa fa-youtube fa-2x"></i> Youtube</a>
               </li>
               <br/>
           </ul>
@@ -74,12 +67,9 @@
     <div class="text-center">
       <font size="2">
         <p class="copyright">
-          ${_(u"© 2011-2015 {platform_name}®. ©Universidad Autónoma Chapingo. Todos los derechos reservados.").format(platform_name=platform_name())}</p>
+          ${_(u"© 2011-2015 {platform_name}®. ©Gobierno del estado de Oaxaca. Todos los derechos reservados.").format(platform_name=platform_name())}</p>
       </font>
-      <font size="1">
-        <p>
-          km 38.5 carr. México - Texcoco. CP 56230, Chapingo, Estado de México. Tel (595)9521500</p>
-      </font>
+
     </div>
 
   </div>

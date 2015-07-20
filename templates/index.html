@@ -10,7 +10,7 @@
   homepage_overlay_html = microsite.get_value('homepage_overlay_html')
 
   show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', True)
-  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "7V4SbB09Aok")
+  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "OvkLRi6q47o")
 
   show_partners = microsite.get_value('show_partners', True)
 
@@ -27,9 +27,9 @@
             % if self.stanford_theme_enabled():
               <h1>${_("<strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
             % else:
-              <h1>${_("Educacion a distancia")}</h1>
+              <h1>${_("Instituto de capacitaci&oacuten")}</h1>
             % endif
-            <h2>${_("Universidad Autonoma Chapingo")}</h2>
+            <h2>${_("")}</h2>
           % endif
         </hgroup>
 
@@ -84,7 +84,7 @@
     <%
       youtube_video_id = homepage_promo_video_youtube_id
       if self.stanford_theme_enabled():
-        youtube_video_id = "7V4SbB09Aok"
+        youtube_video_id = "OvkLRi6q47o"
     %>
     <iframe width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -100,13 +100,7 @@
    </script>
 
    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-     ga('create', 'UA-47956808-4', 'auto');
-     ga('send', 'pageview');
    </script>
 
 </%block>

@@ -1,10 +1,10 @@
 {
   "name": "edx-theme",
   "private": true,
-  "description": "Open edX theme for Chapingo",
+  "description": "Open edX theme for Oax",
   "repository": {
     "type": "git",
-    "url": "git://github.com/negritobomb/edx-theme-chapingo.git"
+    "url": "git://github.com/negritobomb/edx-theme-oax.git"
   },
   "scripts": {
     "test": "grunt test"
