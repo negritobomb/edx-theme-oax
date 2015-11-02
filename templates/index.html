@@ -3,13 +3,13 @@
 <%! from django.core.urlresolvers import reverse %>
 <%inherit file="main.html" />
 <%namespace name='static' file='static_content.html'/>
-<%block name="pagetitle">${_("ICEO")}</%block>
+<%block name="pagetitle">${_("Portal de Capacitacion en Linea")}</%block>
 <%! from microsite_configuration import microsite %>
 
 <%
   homepage_overlay_html = microsite.get_value('homepage_overlay_html')
 
-  show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', True)
+  show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', False)
   homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "OvkLRi6q47o")
 
   show_partners = microsite.get_value('show_partners', True)
@@ -29,7 +29,8 @@
             % else:
               <h1>${_("Instituto de capacitaci&oacuten")}</h1>
             % endif
-            <h2>${_("")}</h2>
+            <h2>${_("Bienvenida/Bienvenido:
+La capacitación y formación en línea, es fundamental y hoy en día indispensable para agilizar los procesos de aprendizaje necesarios para el buen desempeño laboral de las y los colaboradores del Gobierno del Estado.")}</h2>
           % endif
         </hgroup>
 
@@ -41,10 +42,10 @@
             <div class="secondary-actions">
               <div class="social-sharing">
                 <div class="sharing-message">${_("Mantente al d&iacutea {platform_name} has to offer!").format(platform_name=settings.PLATFORM_NAME)}</div>
-                <a href="https://twitter.com/uach_chapingo" class="share">
+                <a href="" class="share">
                   <img src="${static.url('images/social/twitter-sharing.png')}">
                 </a>
-                <a href="http://www.facebook.com/chapingo.online" class="share">
+                <a href="" class="share">
                   <img src="${static.url('images/social/facebook-sharing.png')}">
                 </a>
               </div>
